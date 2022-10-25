@@ -6,30 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/global.css">
+    <link rel="stylesheet" href="src/css/home.css">
     <title> Portifolio Home </title>
 </head>
 <body>
-    <nav id="navbar">
-        <a id="home" onclick="ChangePage('home.html')"> Home </a>
-        <a id="projets" onclick="ChangePage('src/pages/projects.html')"> Projetos </a>
-        <a id="about" onclick="ChangePage('src/pages/about.html')"> Sobre </a>
-    </nav>
-    <main>
-        <img src="./src/images/perfil.jpg" alt="" id="perfil">
-            <p id="information"> Meu nome é Sávio, tenho 20 anos, sou programador
-                                 Júnior em JavaScript, CSS e HTML </p>
-    </main>
+    <div class="head">
+        <nav class="navbar">
+            <li class="navlist">
+              <a class="navlink home" onclick="ChangePage('home.html')"> Home </a>
+              <a class="navlink projects" onclick="ChangePage('src/pages/projects.html')"> Projetos </a>
+              <a class="navlink about" onclick="ChangePage('src/pages/about.html')"> Sobre </a>
+            </li>
+          </nav>
+          <main>
+              <img src="" alt="" class="perfil">
+                  <p class="information"> Meu nome é Sávio, tenho 20 anos, sou programador
+                                       Júnior em JavaScript, CSS e HTML </p>
+          </main>
+    </div>
 
-    <section id="section">
-        <li>
-            <a id="Instagram"></a>
-            <a id="whatsapp"></a>
-            <a id="github"></a>
+    <!-- <section class="contacts">
+        <li class="list contact">
+          <a class="Instagram"> Instagram </a>
+          <a class="whatsapp"> whatsapp</a>
+          <a class="github"> github </a>
         </li>
-    </section>
-
-    <footer id="page-footer"> </footer>
-
+        <footer class="page-footer"> </footer>
+    </section> -->
     <script src="./src/javascript/main.js"></script>
 </body>
 </html>
