@@ -11,11 +11,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+    <script src="./src/javascript/main.js" defer></script>
     <title> Portifolio Home </title>
 </head>
 <body>
     <div class="head">
-        <nav class="navbar">
+      <div class="background"></div>
+      <div class="effect"></div>
+        <nav class="navbar glass">
             <li class="navlist">
               <a class="navlink home" onclick="ChangePage('home.html')"> Home </a>
               <a class="navlink projects" onclick="ChangePage('src/pages/projects.html')"> Projetos </a>
@@ -23,20 +26,21 @@
             </li>
           </nav>
           <main class="perfil">
-              <img src="" alt="" class="image">
-                  <p class="information"> Meu nome é Sávio, tenho 20 anos, sou programador
-                                       Júnior em JavaScript, CSS e HTML </p>
+            <a href="" class="mold glass">
+              <img src="./src/images/perfil.jpg" alt="perfil Sávio Haistem" class="image">
+            </a>
+              <p class="information glass"> Meu nome é Sávio, tenho 20 anos, sou programador Júnior em JavaScript, CSS e HTML aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaw </p>
           </main>
     </div>
 
-    <!-- <section class="contacts">
+      <section class="contacts">
         <li class="list contact">
           <a class="Instagram"> Instagram </a>
           <a class="whatsapp"> whatsapp</a>
           <a class="github"> github </a>
         </li>
         <footer class="page-footer"> </footer>
-    </section> -->
-    <script src="./src/javascript/main.js"></script>
+    </section>
+    
 </body>
 </html>

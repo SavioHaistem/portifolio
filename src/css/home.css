@@ -1,41 +1,131 @@
 body {
     background-color: rgb(0, 0, 0);
     font-family: 'Signika Negative', sans-serif;
+    overflow-x: hidden;
 }
 .head {
+    overflow: hidden;
+    width: 100vw;
     padding-top: 2vh;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.549),transparent),url(../images/fundo.png);
-    background-size: cover;
     height: 98vh;
-    display: grid;
-    grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 10vh 18vh;
-    grid-template-areas:
-    ". navbar ."
-    ". perfil ."
-    ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head .background {
+    top: 0;
+    left: 0;
+    right: 0;
+    box-sizing: content-box;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/fundo.png);
+    background-size: cover;
+    animation: moving 30s alternate-reverse infinite;
+}
+@keyframes moving {
+    from {
+        transform: scale(1,1)
+    }
+    to {
+        transform: scale(1.3, 1.3);
+    }
 }
 .head .navbar {
-    width: 50vw;
-    border: 0.001px rgba(255, 255, 255, 0.286) double;
-    backdrop-filter: blur( 1rem );
+    width: 30vw;
     height: 10vh;
     display: flex;
     justify-content: space-evenly;
-    box-shadow:  2px 3px 1px rgba(0, 0, 0, 0.2);
     border-radius: 80px;
 }
+.effect {
+    top: 0;
+    left: 0;
+    right: 0;
+    box-sizing: content-box;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to top, rgb(0, 0, 0) calc(1% - 2vh),transparent);
+}
+.glass {
+    background-color: rgba(255, 255, 255, 0.11);
+    border: 0.001px rgba(255, 255, 255, 0.319) double;
+    backdrop-filter: blur( 2rem );
+    box-shadow:  3px 4px 1px rgba(0, 0, 0, 0.2);
+}
 .head .navbar li {
-    gap: 5rem;
+    font-size: 1.11rem;
+    gap: 3vw;
     display: flex;   
     list-style: none;
+    overflow: hidden;
 }
 .head .navbar a {
-   display: flex;
-   align-items: center;
+    display: flex;
+    align-items: center;
 }
-.contacts li {
-    display: none;
-    list-style: none;
-    margin-left: 10px;
+.head .perfil img {
+    max-width: 15rem;
+    max-height: 15rem;
+    border-radius: 100%;
+} 
+.head .perfil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    height: 80vh;
+}
+.head .perfil p {
+    text-align: left;
+    border-radius: 30px;
+    max-width: 28vw;
+    min-height: 30vh;
+    padding: 1.5rem;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+.head .mold {
+    padding: 2rem;
+    border-radius: 40px;
+}
+.contacts {
+    position: absolute;
+    background-color: black;
+    width: 100vw;
+    height: 500px
+}
+
+
+@media (max-width: 925px) {
+    .head {
+        padding-top: 2rem;
+    }
+    .head .navbar {
+        width: 80vw;
+        height: 8vh;
+    }
+    .head .navbar li {
+        gap: 8vw;
+    }
+    .head .perfil {
+        height: 70vh;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .head .perfil img {
+        max-width: 30vw;
+        max-height: 30vh;
+        border-radius: 100%;
+    } .head .mold {
+        padding: 1.355rem;
+        border-radius: 40px;
+    }
+    .head .perfil p {
+        max-width: 58vw;
+    }
 }
