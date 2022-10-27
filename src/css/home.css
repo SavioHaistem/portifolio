@@ -35,8 +35,9 @@ body {
 }
 .head .navbar li {
     font-size: 1.11rem;
-    gap: 3vw;
-    display: flex;   
+    gap: 3rem;
+    display: flex;
+    align-items: center;
     list-style: none;
     overflow: hidden;
 }
@@ -80,7 +81,12 @@ body {
 .head .perfil span {
     color: rgb(225, 255, 0);
 }
-
+.active {
+    max-height: 4vh;
+    padding: 0.5rem;
+    border: 3px solid rgb(254, 250, 0);
+    border-radius: 80px;
+}
 
 @media (max-width: 925px) {
     .head {
