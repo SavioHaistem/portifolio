@@ -27,24 +27,7 @@ body {
     width: 100vw;
     background-image: linear-gradient(to top, rgb(0, 0, 0) calc(1% - 2vh),transparent);
 }
-.glass {
-    background-color: rgba(255, 255, 255, 0.11);
-    border: 0.001px rgba(255, 255, 255, 0.319) double;
-    backdrop-filter: blur( 2rem );
-    box-shadow:  3px 4px 1px rgba(0, 0, 0, 0.2);
-}
-.head .navbar li {
-    font-size: 1.11rem;
-    gap: 3rem;
-    display: flex;
-    align-items: center;
-    list-style: none;
-    overflow: hidden;
-}
-.head .navbar a {
-    display: flex;
-    align-items: center;
-}
+
 .head .perfil img {
     max-width: 15rem;
     max-height: 15rem;
