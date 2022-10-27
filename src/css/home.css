@@ -13,14 +13,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
-.head .navbar {
-    margin-top: 4vh;
-    width: 30vw;
-    height: 10vh;
-    display: flex;
-    justify-content: space-evenly;
-    border-radius: 80px;
-}
+
 .effect {
     position: absolute;
     height: 100vh;
@@ -55,21 +48,37 @@ body {
     padding: 2rem;
     border-radius: 40px;
 }
-.contacts {
-    position: absolute;
+.Projetos-favoritos {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     background-color: black;
-    width: 100vw;
-    height: 500px
+    height: 50vh;
+    border: red 2px solid;
+}
+.Projetos-favoritos .projects-fav-list {
+    border: blue 2px solid;
+    width: 70vw;
+    display: flex;
+    padding: 20px;
+    gap: 40px;
+    overflow-x: scroll;
+}
+.projects-fav-list a {
+    min-width: 15rem;
+    border: green 2px solid;
+    background-color: rgb(63, 63, 63);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5vh;
 }
 .head .perfil span {
     color: rgb(225, 255, 0);
 }
-.active {
-    max-height: 4vh;
-    padding: 0.5rem;
-    border: 3px solid rgb(254, 250, 0);
-    border-radius: 80px;
-}
+
 
 @media (max-width: 925px) {
     .head {
@@ -93,11 +102,13 @@ body {
         max-width: 30vw;
         max-height: 30vh;
         border-radius: 100%;
-    } .head .mold {
+    }.head .mold {
         padding: 1.355rem;
         border-radius: 40px;
     }
     .head .perfil p {
         max-width: 58vw;
+    }
+    .projects-fav-list {
     }
 }

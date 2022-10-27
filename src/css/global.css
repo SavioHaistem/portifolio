@@ -2,6 +2,12 @@ body {
     color: white;
     background-color: black;
 }
+.active {
+    max-height: 4vh;
+    padding: 0.5rem;
+    border: 3px solid rgb(254, 250, 0);
+    border-radius: 80px;
+}
 .ocult {
     display: none;
 }
@@ -10,6 +16,24 @@ body {
     border: 0.001px rgba(255, 255, 255, 0.319) double;
     backdrop-filter: blur( 2rem );
     box-shadow:  3px 4px 1px rgba(0, 0, 0, 0.2);
+}
+.head {
+    overflow: hidden;
+    width: 100vw;
+    height: 98vh;
+    display: flex;
+    background-color: rgb(73, 73, 73);
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+}
+.head .navbar {
+    margin-top: 4vh;
+    width: 30vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 80px;
 }
 .head .navbar li {
     font-size: 1.11rem;
