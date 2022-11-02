@@ -57,9 +57,10 @@ body {
     justify-content: center;
     background-color: black;
     height: 50vh;
-    border: red 2px solid;
+    border: rgb(255, 0, 238) 2px solid;
 }
 .Projetos-favoritos .projects-fav-list {
+    justify-content: center;
     border: blue 2px solid;
     width: 70vw;
     display: flex;
@@ -67,7 +68,9 @@ body {
     gap: 40px;
     overflow-x: auto;
 }
-.projects-fav-list a {
+.projects-fav-list a 
+{
+    font: 54px white;
     min-width: 15rem;
     border: green 2px solid;
     background-color: rgb(63, 63, 63);
@@ -80,7 +83,11 @@ body {
 .head .perfil span {
     color: rgb(225, 255, 0);
 }
-
+.about {
+    width: 100%;
+    height: 50vh;
+    border: red 2px solid;
+}
 
 @media (max-width: 925px) {
     .head {
