@@ -43,25 +43,21 @@ body {
     padding: 1.5rem;
     overflow-wrap: break-word;
     overflow-y: auto;
-    overflow-x: hidden;
 }
 .head .mold {
     padding: 2rem;
     border-radius: 40px;
 }
 .Projetos-favoritos {
-    width: 99.7%;
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     background-color: black;
     height: 50vh;
-    border: rgb(255, 0, 238) 2px solid;
 }
 .Projetos-favoritos .projects-fav-list {
-    justify-content: center;
-    border: blue 2px solid;
     width: 70vw;
     display: flex;
     padding: 20px;
@@ -72,7 +68,6 @@ body {
 {
     font: 54px white;
     min-width: 15rem;
-    border: green 2px solid;
     background-color: rgb(63, 63, 63);
     border-radius: 10px;
     display: flex;
@@ -84,11 +79,24 @@ body {
     color: rgb(225, 255, 0);
 }
 .about {
+    display: flex;
+    align-items: flex-end;
     width: 100%;
-    height: 50vh;
-    border: red 2px solid;
+    height: 80vh;
+    background-image: url(../images/fundo.png);
+    background-size: cover;
 }
-
+.about .foofect {
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0) calc(1% - 2px),transparent);
+}
+.about .footer {
+    height: 30%;
+    width: 100%;
+    background-color: rgb(56, 56, 56);
+}
 @media (max-width: 925px) {
     .head {
         padding-top: 2rem;
