@@ -93,9 +93,17 @@ body {
     background-image: linear-gradient(to bottom, rgb(0, 0, 0) calc(1% - 2px),transparent);
 }
 .about .footer {
+    border: rgb(98, 255, 98) 3px solid;
     height: 30%;
     width: 100%;
     background-color: rgb(56, 56, 56);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+.footer .footer-area {
+    border: red 3px solid;
+    width: 20%;
 }
 @media (max-width: 925px) {
     .head {
