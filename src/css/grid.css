@@ -1,0 +1,6 @@
+.footer-area .logo {
+    grid-area: logo;
+}
+.footer-area .bloco {
+    grid-area: bloco;
+}
