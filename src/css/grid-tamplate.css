@@ -1,0 +1,6 @@
+.title {
+    grid-area: title;
+}
+.item {
+    grid-area: item;
+}
