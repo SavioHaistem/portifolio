@@ -161,6 +161,6 @@ body {
         max-width: 58vw;
     }
     .footer {
-        height: 20rem;
+        height: auto;
     }
 }
