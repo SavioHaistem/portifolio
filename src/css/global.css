@@ -29,8 +29,8 @@ body {
 }
 .head .navbar {
     margin-top: 4vh;
-    width: 30vw;
-    height: 10vh;
+    width: 56rem;
+    height: 5rem;
     display: flex;
     justify-content: space-evenly;
     border-radius: 80px;

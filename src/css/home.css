@@ -7,7 +7,9 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+.click {
+    cursor: pointer;
+}
  .head {
     width: 100%;
     height: 100vh;
@@ -58,10 +60,10 @@ body {
     flex-direction: row;
     justify-content: center;
     background-color: black;
-    height: 50vh;
+    height: 23rem;
 }
 .Projetos-favoritos .projects-fav-list {
-    width: 70vw;
+    width: 70rem;
     display: flex;
     padding: 20px;
     gap: 40px;
@@ -121,6 +123,7 @@ body {
     'title title title'
     'item item item'
     ;
+    align-self: center;
     justify-content: center;
     align-items: center;
     text-align: center;
